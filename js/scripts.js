@@ -141,7 +141,12 @@ function sumaCantidad(e){
     }
   })
 }
-
+$('.comprarButton').click(function(){
+  Swal.fire({
+    title: '¡Excelente!',
+    text: 'Tu compra ha sido realizada',
+  })
+})
 function addLocalStorage(){
   localStorage.setItem('carrito', JSON.stringify(carrito))
 }
